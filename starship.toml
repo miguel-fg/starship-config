@@ -34,7 +34,7 @@ style_root = "red"
 style_user = "purple"
 
 [directory]
-style = "cyan"
+style = "blue"
 
 [java]
 format = "[$symbol($version )]($style)"
@@ -53,11 +53,11 @@ style = "green"
 
 [dart]
 format = "[$symbol($version )]($style)"
-style = "blue"
+style = "cyan"
 
 [lua]
 format = "[$symbol($version )]($style)"
-style = "blue"
+style = "cyan"
 
 [git_branch]
 format = "[$symbol$branch(:$remote_branch)]($style) "
