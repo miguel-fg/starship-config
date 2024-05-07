@@ -1,0 +1,78 @@
+format = """
+$username\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$git_metrics\
+$fill\
+$nodejs\
+$dart\
+$lua\
+$java\
+$python\
+$c\
+$cmd_duration $jobs $time\
+$line_break\
+$character"""
+
+command_timeout = 1000
+
+[fill]
+symbol = " "
+
+[time]
+disabled = false
+format = "[$time]($style) "
+time_format = "%R"
+style="bright-black"
+
+[username]
+show_always = true
+format = "[$user]($style) @ "
+style_root = "red"
+style_user = "purple"
+
+[directory]
+style = "cyan"
+
+[java]
+format = "[$symbol($version )]($style)"
+
+[python]
+format = "[${symbol}${pyenv_prefix}(${version} )(\\($virtualenv\\) )]($style)"
+style = "yellow"
+
+[c]
+format ="[$symbol($version(-$name) )]($style)"
+style = "149"
+
+[nodejs]
+format = "[$symbol($version )]($style)"
+style = "green"
+
+[dart]
+format = "[$symbol($version )]($style)"
+style = "blue"
+
+[lua]
+format = "[$symbol($version )]($style)"
+style = "blue"
+
+[git_branch]
+format = "[$symbol$branch(:$remote_branch)]($style) "
+style = "bright-black"
+
+[git_state]
+style = "yellow"
+
+[git_status]
+style = "red"
+
+[git_metrics]
+disabled = false
+added_style = "green"
+deleted_style = "red"
+
+[cmd_duration]
+style = "yellow"
