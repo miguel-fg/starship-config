@@ -16,7 +16,7 @@ $cmd_duration $jobs $time\
 $line_break\
 $character"""
 
-command_timeout = 1000
+command_timeout = 2000
 
 [fill]
 symbol = " "
@@ -31,13 +31,14 @@ style="bright-black"
 show_always = true
 format = "[$user]($style) @ "
 style_root = "red"
-style_user = "purple"
+style_user = "default"
 
 [directory]
-style = "blue"
+style = "cyan"
 
 [java]
 format = "[$symbol($version )]($style)"
+style = "red"
 
 [python]
 format = "[${symbol}${pyenv_prefix}(${version} )(\\($virtualenv\\) )]($style)"
@@ -53,11 +54,11 @@ style = "green"
 
 [dart]
 format = "[$symbol($version )]($style)"
-style = "cyan"
+style = "blue"
 
 [lua]
 format = "[$symbol($version )]($style)"
-style = "cyan"
+style = "blue"
 
 [git_branch]
 format = "[$symbol$branch(:$remote_branch)]($style) "
