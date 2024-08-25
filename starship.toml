@@ -30,8 +30,8 @@ style="bright-black"
 [username]
 show_always = true
 format = "[$user]($style) @ "
-style_root = "red"
-style_user = "default"
+style_root = "bold red"
+style_user = "bold yellow"
 
 [directory]
 style = "cyan"
